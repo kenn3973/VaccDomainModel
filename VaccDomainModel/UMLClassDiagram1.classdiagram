@@ -43,13 +43,13 @@
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="7ef9fb23-1987-4b46-b99e-894cce1381d9" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="7ef9fb23-1987-4b46-b99e-894cce1381d9" name="navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="0fdf6df6-2aed-4c96-a482-ad6a82b46f0a" />
           </property>
-          <property Id="4c450f78-ab4a-421b-aafa-0310ae8f98f5" name="Fødselsdag" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="4c450f78-ab4a-421b-aafa-0310ae8f98f5" name="fødselsdag" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="8111f32a-ff01-49fd-baea-6d3390bc6ab5" />
           </property>
-          <property Id="4d6e60ab-e973-4859-916f-279fcc91dfe4" name="Køn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="4d6e60ab-e973-4859-916f-279fcc91dfe4" name="køn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="10da2858-5d20-47e4-b272-4462e4d6d42d" />
           </property>
         </ownedAttributesInternal>
