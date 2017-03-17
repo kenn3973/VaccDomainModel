@@ -137,74 +137,11 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="bc45c598-9d40-4106-9e47-a30159aa501a"
-        name="Dato"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <ownedAttributesInternal>
-          <property
-            Id="04662e6a-eab0-4385-896a-39e1f7a5789a"
-            name="Dato på vaccination"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
         Id="94ffa319-b035-432c-96b9-b9b23f0f611f"
         name="Vaccinationer"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="770d5a20-789d-419b-bf0a-62a8221208a9"
-            isDerived="false"
-            sourceEndRoleName="Vaccinationer"
-            targetEndRoleName="Dato"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="bc45c598-9d40-4106-9e47-a30159aa501a"
-              LastKnownName="Dato"
-              LastKnownLocation="VaccDomainModel.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="17aefefb-55c3-4310-bce6-7939a16e2530"
-                  name="Vaccinationer"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="5cce652a-7d7a-405d-9dd7-1b8feea81e68"
-                  name="Dato"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="7ddc0808-3501-41a3-8e40-4f0a68e74d7b"
@@ -219,10 +156,11 @@
             isComposite="false" />
           <property
             Id="f92c28d3-5066-43e4-ab65-abab78203934"
-            name="Attribute1"
+            name="dato"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
+            isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
@@ -411,58 +349,6 @@
                   <upperValueInternal>
                     <literalString
                       Id="6b984f7c-6d9e-451a-8dc8-ee87b78ed915"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="9e23bcf4-2741-49da-86d0-e52c2dba2fa6"
-            isDerived="false"
-            sourceEndRoleName="Forældre"
-            targetEndRoleName="Dato"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="bc45c598-9d40-4106-9e47-a30159aa501a"
-              LastKnownName="Dato"
-              LastKnownLocation="VaccDomainModel.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="a453e315-0283-4c37-a81a-82591ed4889f"
-                  name="Forældre"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ebbef4a5-37fa-4e81-9ae9-fa131a6e0afc"
-                  name="Dato"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="477f2f90-a88a-4907-99ed-45dc41bed453"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="3da05b3c-3dc0-4ce3-bb4f-d93e4d2f6017"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>

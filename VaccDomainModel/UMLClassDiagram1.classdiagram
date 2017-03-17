@@ -56,41 +56,13 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="4f295366-42e3-40cc-99d9-d9628a76abe2" name="Dato" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="bc45c598-9d40-4106-9e47-a30159aa501a" />
-        <ownedAttributesInternal>
-          <property Id="46763e22-e010-4dab-98e0-242625003fe3" name="Dato på vaccination" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="04662e6a-eab0-4385-896a-39e1f7a5789a" />
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="6d466e7f-1371-47aa-b457-3051f5455b8e" name="Vaccinationer" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="94ffa319-b035-432c-96b9-b9b23f0f611f" />
-        <targetEnds>
-          <association Id="5d1ecb11-b8ea-456d-b279-1ad05615d3e7" isDerived="false" sourceEndRoleName="Vaccinationer" targetEndRoleName="Dato" isLeaf="false" isAbstract="false">
-            <classMoniker Id="4f295366-42e3-40cc-99d9-d9628a76abe2" LastKnownName="Dato" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="f1c4362b-21d8-47f3-b5f6-0aa79be6ee11" name="Vaccinationer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="17aefefb-55c3-4310-bce6-7939a16e2530" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="18fac980-91d2-4a6b-b488-cf5ba3f938af" name="Dato" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="5cce652a-7d7a-405d-9dd7-1b8feea81e68" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="770d5a20-789d-419b-bf0a-62a8221208a9" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="29695a37-91ca-43c2-ac3c-486f75e21d3d" name="navn på vaccination" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="7ddc0808-3501-41a3-8e40-4f0a68e74d7b" />
           </property>
-          <property Id="2749cd7b-bc9a-48ee-b038-144b3c799387" name="Attribute1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="2749cd7b-bc9a-48ee-b038-144b3c799387" name="dato" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f92c28d3-5066-43e4-ab65-abab78203934" />
           </property>
         </ownedAttributesInternal>
@@ -189,32 +161,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="6cdc0bf0-8603-40ff-b002-8599dfb992c4" />
-          </association>
-          <association Id="f6bc8828-2785-4186-ae52-dec98616dc04" isDerived="false" sourceEndRoleName="Forældre" targetEndRoleName="Dato" isLeaf="false" isAbstract="false">
-            <classMoniker Id="4f295366-42e3-40cc-99d9-d9628a76abe2" LastKnownName="Dato" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="bdedbdf8-b7dd-4098-8cf1-0ece4a8c4a2c" name="Forældre" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="a453e315-0283-4c37-a81a-82591ed4889f" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="88f30dbc-6b2b-45e4-a007-76f07320c374" name="Dato" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="f0931186-9fcf-4f33-b355-8505fec3c402" name="Lower" value="1">
-                      <elementDefinition Id="477f2f90-a88a-4907-99ed-45dc41bed453" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="f45d803d-d254-495b-ba72-ad5f28a9fc8d" name="Upper" value="*">
-                      <elementDefinition Id="3da05b3c-3dc0-4ce3-bb4f-d93e4d2f6017" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="ebbef4a5-37fa-4e81-9ae9-fa131a6e0afc" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="9e23bcf4-2741-49da-86d0-e52c2dba2fa6" />
           </association>
         </targetEnds>
       </class>
