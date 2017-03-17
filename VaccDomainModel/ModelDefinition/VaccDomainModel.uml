@@ -145,7 +145,7 @@
         <ownedAttributesInternal>
           <property
             Id="7ddc0808-3501-41a3-8e40-4f0a68e74d7b"
-            name="navn på vaccination"
+            name="vaccinationNavn"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"

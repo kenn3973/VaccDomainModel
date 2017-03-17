@@ -59,7 +59,7 @@
       <class Id="6d466e7f-1371-47aa-b457-3051f5455b8e" name="Vaccinationer" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="94ffa319-b035-432c-96b9-b9b23f0f611f" />
         <ownedAttributesInternal>
-          <property Id="29695a37-91ca-43c2-ac3c-486f75e21d3d" name="navn på vaccination" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="29695a37-91ca-43c2-ac3c-486f75e21d3d" name="vaccinationNavn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="7ddc0808-3501-41a3-8e40-4f0a68e74d7b" />
           </property>
           <property Id="2749cd7b-bc9a-48ee-b038-144b3c799387" name="dato" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
