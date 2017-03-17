@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="93e4f8f9-a280-4653-9675-c48b2ee649f8"
   name="VaccDomainModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,28 +17,481 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="77cf5284-f019-48e5-8177-b9939f93b618"
+        LastKnownName="MODEl"
+        LastKnownLocation="Package_1009.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="34eee623-2945-4e21-8829-38967e7b867f"
+        name="Barn"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4fe3721d-6231-43bb-bacc-63790fa57f6d"
+            isDerived="false"
+            sourceEndRoleName="Barn"
+            targetEndRoleName="Vaccinationer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="94ffa319-b035-432c-96b9-b9b23f0f611f"
+              LastKnownName="Vaccinationer"
+              LastKnownLocation="VaccDomainModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="db049216-a714-486d-b4d7-3646af5c3ea2"
+                  name="Barn"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4101d1ca-f569-44ad-837f-471cd28d0256"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e31d75c8-69b1-4111-80f1-0b45f01be661"
+                      name="Upper"
+                      value=".*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d2c55204-b8cd-4f59-bea5-ed1da20e74fa"
+                  name="Vaccinationer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f56bb359-0d3b-421c-b7ed-6ded471043df"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="981bf112-b628-4c53-8f57-37cc3868cfd9"
+                      name="Upper"
+                      value=".*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0fdf6df6-2aed-4c96-a482-ad6a82b46f0a"
+            name="Navn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8111f32a-ff01-49fd-baea-6d3390bc6ab5"
+            name="Fødselsdag"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="10da2858-5d20-47e4-b272-4462e4d6d42d"
+            name="Køn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bc45c598-9d40-4106-9e47-a30159aa501a"
+        name="Dato"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="04662e6a-eab0-4385-896a-39e1f7a5789a"
+            name="Dato på vaccination"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="94ffa319-b035-432c-96b9-b9b23f0f611f"
+        name="Vaccinationer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="770d5a20-789d-419b-bf0a-62a8221208a9"
+            isDerived="false"
+            sourceEndRoleName="Vaccinationer"
+            targetEndRoleName="Dato"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="bc45c598-9d40-4106-9e47-a30159aa501a"
+              LastKnownName="Dato"
+              LastKnownLocation="VaccDomainModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="17aefefb-55c3-4310-bce6-7939a16e2530"
+                  name="Vaccinationer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5cce652a-7d7a-405d-9dd7-1b8feea81e68"
+                  name="Dato"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="7ddc0808-3501-41a3-8e40-4f0a68e74d7b"
+            name="navn på vaccination"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f92c28d3-5066-43e4-ab65-abab78203934"
+            name="Attribute1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2bfe6d7a-5eb0-450e-bba2-18130eada683"
+        name="Region Sjælland"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="eee1d87a-160c-45d1-9247-546470737f2d"
+            isDerived="false"
+            sourceEndRoleName="Region Sjælland"
+            targetEndRoleName="Vaccinationer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="94ffa319-b035-432c-96b9-b9b23f0f611f"
+              LastKnownName="Vaccinationer"
+              LastKnownLocation="VaccDomainModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e578a3b0-9904-4c8d-9037-6b89e0ad7d86"
+                  name="Region Sjælland"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2bfea5c-ee50-4c44-9f62-4dab7ce047ee"
+                  name="Vaccinationer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="022c9b67-8de2-438a-b4a2-062a16d9a3ae"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5650de61-5580-48ae-a5a2-52494535b59b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="cd45a7f6-4f45-49b4-a8ae-18ba48a93e3f"
+            name="Læge"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="405e761a-2fab-42d5-9f6a-e3f3e5db319b"
+        name="Forældre"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="efa82c83-3e66-471e-aa64-c5f3d721e96e"
+            isDerived="false"
+            sourceEndRoleName="Forældre"
+            targetEndRoleName="Barn"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="34eee623-2945-4e21-8829-38967e7b867f"
+              LastKnownName="Barn"
+              LastKnownLocation="VaccDomainModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f02797fd-3950-4d2a-99ea-7b20584d37ac"
+                  name="Forældre"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="397e4150-60bd-41c6-a1ff-0b143e9aebda"
+                  name="Barn"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d10eed8f-daf2-4d8a-92d0-172c17b1bd2a"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e1b0ad36-44ef-4926-81e3-4121dd4ac7ab"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6cdc0bf0-8603-40ff-b002-8599dfb992c4"
+            isDerived="false"
+            sourceEndRoleName="Forældre"
+            targetEndRoleName="Vaccinationer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="94ffa319-b035-432c-96b9-b9b23f0f611f"
+              LastKnownName="Vaccinationer"
+              LastKnownLocation="VaccDomainModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3205069-e60d-4b8e-886a-e2df7abb6e59"
+                  name="Forældre"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="154a95a0-cc20-49eb-a785-edac31c235b6"
+                  name="Vaccinationer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e59afd79-4520-4a3f-b9b0-36e7c81a94c9"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6b984f7c-6d9e-451a-8dc8-ee87b78ed915"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9e23bcf4-2741-49da-86d0-e52c2dba2fa6"
+            isDerived="false"
+            sourceEndRoleName="Forældre"
+            targetEndRoleName="Dato"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="bc45c598-9d40-4106-9e47-a30159aa501a"
+              LastKnownName="Dato"
+              LastKnownLocation="VaccDomainModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a453e315-0283-4c37-a81a-82591ed4889f"
+                  name="Forældre"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ebbef4a5-37fa-4e81-9ae9-fa131a6e0afc"
+                  name="Dato"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="477f2f90-a88a-4907-99ed-45dc41bed453"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3da05b3c-3dc0-4ce3-bb4f-d93e4d2f6017"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>
